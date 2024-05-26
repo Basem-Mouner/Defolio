@@ -1,0 +1,42 @@
+/* sm*/
+
+@media(min-width:400px) {}
+
+
+/* md */
+
+@media(min-width:768px) {}
+
+
+/* lg */
+
+@media(min-width:1024px) {
+    .nav-item .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 8%;
+        width: 0%;
+        height: .2rem;
+        background-color: #ffffff;
+        transition: all .5s ease-in-out;
+    }
+    .nav-item .nav-link:hover::after,
+    .nav-item .active::after {
+        width: 80%;
+    }
+    #Home {
+        background-attachment: fixed;
+    }
+    #foot-servcies {
+        background-attachment: fixed;
+    }
+    #foot-work {
+        background-attachment: fixed;
+    }
+}
+
+
+/* xl */
+
+@media(min-width:1280px) {}
